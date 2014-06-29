@@ -23,7 +23,8 @@ function gennum(){
     document.getElementById("feedback").innerHTML="Make your Guess";
     document.getElementById("userGuess").value="";
     document.getElementById('guessList').innerHTML="";
-	alert(randomvalue);
+    counter=0;
+    alert(randomvalue);
 }
 function  guessfu(inputnumber){
 	if(inputnumber>100 || inputnumber<1)
