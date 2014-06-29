@@ -20,7 +20,7 @@ var diff=0;
 function gennum(){
     randomvalue=randomIntFromInterval(1,100);
     document.getElementById("count").innerHTML=0;
-    document.getElementById("feedback").innerHTML="Make your Guess";
+    document.getElementById("feedback").innerHTML="Make your Guess!";
     document.getElementById("userGuess").value="";
     document.getElementById('guessList').innerHTML="";
     counter=0;
