@@ -24,15 +24,13 @@ function gennum(){
     document.getElementById("userGuess").value="";
     document.getElementById('guessList').innerHTML="";
     counter=0;
-    alert(randomvalue);
 }
 function  guessfu(inputnumber){
 	if(inputnumber>100 || inputnumber<1)
 		alert("Please enter a number between 1 and 100");
 	else{
 	  var feedbackinfo="";
-	  alert(inputnumber);
-      if(Math.abs(inputnumber-randomvalue)>=50)
+	    if(Math.abs(inputnumber-randomvalue)>=50)
 	        feedbackinfo="ice cold";
       else if(Math.abs(inputnumber-randomvalue)<50 && Math.abs(inputnumber-randomvalue)>30)
             feedbackinfo="cold";
@@ -49,8 +47,6 @@ function  guessfu(inputnumber){
       else if((diff-Math.abs(inputnumber-randomvalue))<0 &&counter>0 && Math.abs(inputnumber-randomvalue)!=0)
       	    feedbackinfo="Colder";
       counter++;
-      alert(counter);
-      alert(feedbackinfo);
       diff=Math.abs(inputnumber-randomvalue);
       document.getElementById("count").innerHTML=counter;
       document.getElementById("feedback").innerHTML=feedbackinfo;
